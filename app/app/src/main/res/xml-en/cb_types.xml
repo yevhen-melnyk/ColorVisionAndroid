@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <Protanopia>
+        <Name></Name>
+        <Name-local>Protanopia</Name-local>
+        <Summary>People with protanopia have no working red cone cells. Red appears as black.
+            Certain shades of orange, yellow, and green all appear as yellow.</Summary>
+    </Protanopia>>
+
+    <Deuteranopia>
+        <Name-local>Deuteranopia</Name-local>
+        <Summary>People with deuteranopia have no working green cone cells. They tend to see reds as
+            brownish-yellow and greens as beige.</Summary>
+    </Deuteranopia>>
+
+    <Tritanomaly>
+        <Name-local>Tritanomaly</Name-local>
+        <Summary>People with tritanomaly have functionally limited blue cone cells.
+            Blue appears greener and it can be difficult to tell yellow and red from pink.</Summary>
+    </Tritanomaly>>
+
+    <Tritanopia>
+        <Name-local>Tritanopia</Name-local>
+        <Summary>People with tritanopia, also known as blue-yellow color blindness, lack blue cone
+            cells. Blue appears green and yellow appears violet or light grey.</Summary>
+    </Tritanopia>>
+
+</resources>

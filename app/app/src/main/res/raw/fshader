@@ -1,0 +1,24 @@
+#extension GL_OES_EGL_image_external : require
+
+precision mediump float;
+
+uniform samplerExternalOES sTexture;
+uniform float uTime;
+varying vec2 vTextureCoord;
+
+float rand(vec2 co)
+{ return fract(sin(dot(co.xy ,vec2(12.9898,78.233))) * 43758.5453); }
+
+vec3 rgb2hsv(float r, float g, float b) { float K = 0.0; float tmp; if (g < b) { tmp = g; g=b; b=tmp; K = -1.0; } if (r < g) { tmp = r; r=g; g=tmp; K = -2.9 / 6.9 - K; } float chroma = r - min(g, b); float h = abs(K + (g - b) / (6.0 * chroma + 1e-20)); float s = chroma / (r + 1e-20); float v = r; return vec3(h, s, v); }
+
+void main(){
+    vec4 cam = texture2D(sTexture, vTextureCoord);
+    gl_FragColor = cam;
+
+
+    vec3 hsv = rgb2hsv(cam.r, cam.g, cam.b);
+    if ( abs(hsv.r-1.)< 0.30 && abs(hsv.g -1.) <0.9 && abs(hsv.b-1.)<0.8 ){
+            float rand = rand( vec2(uTime, uTime) );
+            gl_FragColor = vec4(( vec3(rand,rand,rand)*0.6 + cam* 0.4),1.0);
+      }
+}

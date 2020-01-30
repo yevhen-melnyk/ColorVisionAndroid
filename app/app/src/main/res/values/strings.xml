@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Color Vision</string>
+    <string name="goto_camera_activity">Enter camera mode</string>
+    <string name="goto_settings">Settings</string>
+    <string name="settings_activity_name">Settings Activity</string>
+    <string name="colorblindness_type_prompt">Colorblindness type:</string>
+
+    <string name="brief_instructions">Default settings are set to protanopia (the most common, red color colorblindness). If you suffer from a different kind of colorblindness open the settings and choose it if it\'s supported. </string>
+    <string name="pattern_instructions"> Different colors will be displayed in different patterns. \n\n
+    Red is displayed as a checkers grid. \n
+    Green is displayed as triangles. \n
+    Blue is displayed as circles. \n
+    Yellow is displayed as a diamond grid.
+
+    </string>
+
+    <string name="warning">
+        Warning: do not rely on this app in serious situations
+        as colors may be false interpreted in dark environments.
+        Also depending on your camera\'s light sensitivity red and yellow may be interpreted as similar.
+        \n Scroll down for instructions.
+
+    </string>
+
+    <string name="title_activity_camera">CameraActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="vision_activity_name">Vision Activity</string>
+    <string name="noPermissionToast">Cannot proceed - no camera permission was granted.</string>
+    <string name="detect_red">Detect red</string>
+    <string name="detect_yellow">Detect yellow and orange</string>
+    <string name="detect_green">Detect green</string>
+    <string name="detect_blue">Detect blue</string>
+    <string name="detect_purple">Detect purple and pink</string>
+</resources>
